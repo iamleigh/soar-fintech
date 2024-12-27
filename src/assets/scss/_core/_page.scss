@@ -30,7 +30,7 @@ body {
 		background: var(--color-secondary-light);
 	}
 
-	* {
+	&, * {
 		box-sizing: border-box;
 	}
 }
