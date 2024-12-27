@@ -26,10 +26,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
-	@include bp(min-width, sm) {
-		background: var(--color-secondary-light);
-	}
-
 	&, * {
 		box-sizing: border-box;
 	}
