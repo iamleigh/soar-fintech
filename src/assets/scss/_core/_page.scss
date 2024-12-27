@@ -13,8 +13,22 @@ body {
 	border: 0;
 }
 
+html {
+	font-size: var(--font-size-md);
+}
+
 body {
-	background: $color-primary;
+	background: var(--color-mono-light);
+	font-size: 1rem;
+	font-family: var(--font-family);
+	line-height: 1.2rem;
+	letter-spacing: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	@include bp(min-width, sm) {
+		background: var(--color-secondary-light);
+	}
 
 	* {
 		box-sizing: border-box;
