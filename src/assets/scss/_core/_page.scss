@@ -29,6 +29,10 @@ body {
 	&, * {
 		box-sizing: border-box;
 	}
+
+	@include bp(min-width, md) {
+		padding-left: var(--sidebar-width);
+	}
 }
 
 [hidden] {
