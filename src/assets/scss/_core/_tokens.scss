@@ -37,6 +37,11 @@
 	--font-size-sm: 12px;
 	--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
+	// Spacing
+	--spacing-md: 25px;
+	--spacing-vertical: 25px;
+	--spacing-horizontal: 25px;
+
 	@include bp(min-width, sm) {
 		// Border
 		--border-radius-md: 10px;
@@ -47,5 +52,10 @@
 		--font-size-h2: 22px;
 		--font-size-md: 16px;
 		--font-size-sm: 15px;
+
+		// Spacing
+		--spacing-md: 40px;
+		--spacing-vertical: 30px;
+		--spacing-horizontal: 40px;
 	}
 }
