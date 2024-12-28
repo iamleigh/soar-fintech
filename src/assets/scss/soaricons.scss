@@ -2,11 +2,11 @@
 
 @font-face {
   font-family: '#{$icomoon-font-family}';
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?24rcnp');
-  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?24rcnp#iefix') format('embedded-opentype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?24rcnp') format('truetype'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?24rcnp') format('woff'),
-    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?24rcnp##{$icomoon-font-family}') format('svg');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?id3eun');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?id3eun#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?id3eun') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?id3eun') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?id3eun##{$icomoon-font-family}') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -85,6 +85,11 @@
 .soaricons--chevron-right {
   &:before {
     content: $soaricons--chevron-right;
+  }
+}
+.soaricons--task {
+  &:before {
+    content: $soaricons--task;
   }
 }
 .soaricons--settings {
