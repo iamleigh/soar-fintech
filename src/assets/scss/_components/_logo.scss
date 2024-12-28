@@ -1,0 +1,30 @@
+@use "../_utils/utils" as *;
+
+/// -----------------------------------------------------------------------------
+/// 🟢 Logo
+///
+/// @author Leighton Quito (iamleigh.com)
+/// -----------------------------------------------------------------------------
+@include block(logo) {
+	display: flex;
+	flex-flow: row nowrap;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	color: $color-primary-dark;
+	font-size: 25px;
+	font-weight: 800;
+
+	@include element(icon) {
+		flex: 0 0 auto;
+		padding: 2px;
+		color: $color-mono-dark;
+		font-size: 30px;
+	}
+
+	@include element(name) {
+		min-width: 1px;
+		flex: 1;
+		margin-left: 10px;
+	}
+}
