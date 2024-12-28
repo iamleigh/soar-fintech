@@ -1,69 +1,79 @@
 @use "../_utils/utils" as *;
 
 /// -----------------------------------------------------------------------------
-/// 🟢 Project Tokens
+/// 🟢 Root Tokens
+///
+/// This file holds the root variables used in this project that will be required
+/// on a specific case scenario. The 95% of the project will rely on SCSS Variables
+/// that will be located in the `_utils` folder under the `_tokens.scss` file.
 ///
 /// @author Leighton Quito (iamleigh.com)
 /// -----------------------------------------------------------------------------
 :root {
+	--breakpoint: #{$bp-md};
+	--font-size: #{$font-size-base-sm};
+	--font-family: #{$font-family};
+	--sidebar-width: #{$sidebar-width};
+
 	// Border
-	--border-radius-md: 15px;
-	--border-radius-lg: 25px;
+	// --border-radius-md: 15px;
+	// --border-radius-lg: 25px;
 
 	// Breakpoints
-	--bp-sm: 651px;
-	--bp-md: 835px;
-	--bp-lg: 1101px;
+	// --bp-sm: 651px;
+	// --bp-md: 835px;
+	// --bp-lg: 1101px;
 
 	// Palette: Primary
-	--color-primary: #396AFF;
-	--color-primary-light: #E7EDFF;
-	--color-primary-dark: #343C6A;
+	// --color-primary: #396AFF;
+	// --color-primary-light: #E7EDFF;
+	// --color-primary-dark: #343C6A;
 
 	// Palette: Secondary
-	--color-secondary: #8BA3CB;
-	--color-secondary-light: #F5F7FA;
-	--color-secondary-dark: #718EBF;
+	// --color-secondary: #8BA3CB;
+	// --color-secondary-light: #F5F7FA;
+	// --color-secondary-dark: #718EBF;
 
 	// Palette: Extended
-	--color-mono: #B1B1B1;
-	--color-mono-light: #FFFFFF;
-	--color-mono-dark: #232323;
-	--color-green: #16DBCC;
-	--color-green-light: #DCFAF8;
-	--color-yellow: #FFBB38;
-	--color-yellow-light: #FFF5D9;
-	--color-orange: #FC7900;
+	// --color-mono: #B1B1B1;
+	// --color-mono-light: #FFFFFF;
+	// --color-mono-dark: #232323;
+	// --color-green: #16DBCC;
+	// --color-green-light: #DCFAF8;
+	// --color-yellow: #FFBB38;
+	// --color-yellow-light: #FFF5D9;
+	// --color-orange: #FC7900;
 
 	// Font
-	--font-size-h1: 20px;
-	--font-size-h2: 16px;
-	--font-size-md: 14px;
-	--font-size-sm: 12px;
-	--font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+	// --font-size-h1: 20px;
+	// --font-size-h2: 16px;
+	// --font-size-md: 14px;
+	// --font-size-sm: 12px;
+	// --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 
 	// Sidebar
-	--sidebar-width: 250px;
+	// --sidebar-width: 250px;
 
 	// Spacing
-	--spacing-md: 25px;
-	--spacing-vertical: 25px;
-	--spacing-horizontal: 25px;
+	// --spacing-md: 25px;
+	// --spacing-vertical: 25px;
+	// --spacing-horizontal: 25px;
 
 	@include bp(min-width, md) {
+		--font-size: #{$font-size-base-md};
 		// Border
-		--border-radius-md: 10px;
-		--border-radius-lg: 15px;
+		// --border-radius-md: 10px;
+		// --border-radius-lg: 15px;
 
 		// Font
-		--font-size-h1: 28px;
-		--font-size-h2: 22px;
-		--font-size-md: 16px;
-		--font-size-sm: 15px;
+		// --font-size-h1: 28px;
+		// --font-size-h2: 22px;
+		// --font-size-md: 16px;
+		// --font-size-sm: 15px;
 
 		// Spacing
-		--spacing-md: 40px;
-		--spacing-vertical: 30px;
-		--spacing-horizontal: 40px;
+		// --spacing-md: 40px;
+		// --spacing-vertical: 30px;
+		// --spacing-horizontal: 40px;
 	}
 }

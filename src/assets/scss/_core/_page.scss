@@ -14,13 +14,13 @@ body {
 }
 
 html {
-	font-size: var(--font-size-md);
+	font-size: var(--font-size, $font-size-base-md);
 }
 
 body {
-	background: var(--color-mono-light);
+	background: $color-mono-light;
 	font-size: 1rem;
-	font-family: var(--font-family);
+	font-family: var(--font-family, $font-family);
 	line-height: 1.2rem;
 	letter-spacing: 0;
 	-webkit-font-smoothing: antialiased;
@@ -31,7 +31,7 @@ body {
 	}
 
 	@include bp(min-width, md) {
-		padding-left: var(--sidebar-width);
+		padding-left: var(--sidebar-width, $sidebar-width);
 	}
 }
 
