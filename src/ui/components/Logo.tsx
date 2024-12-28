@@ -6,14 +6,15 @@ type LogoProps = {
 }
 
 const Logo: React.FC<LogoProps> = ({ className }) => {
+	const uiClass = 'soarui-logo';
 	const extraClass = 'undefined' !== typeof className && '' !== className
 		? ' ' + className
 		: '';
 
 	return (
-		<h1 className={`soarui-logo${ extraClass }`}>
-			<Icon name="task" className="soarui-logo__icon" />
-			<span className="soarui-logo__name">Soar Task</span>
+		<h1 className={`${ uiClass }${ extraClass }`}>
+			<Icon name="task" className={`${ uiClass }__icon`} />
+			<span className={`${ uiClass }__name`}>Soar Task</span>
 		</h1>
 	);
 }
