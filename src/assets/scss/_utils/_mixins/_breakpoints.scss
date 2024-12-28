@@ -1,9 +1,10 @@
 @use "sass:map";
+@use "../tokens" as *;
 
 $breakpoints: (
-	sm: 651px,
-	md: 835px,
-	lg: 1101px,
+	sm: $bp-sm,
+	md: $bp-md,
+	lg: $bp-lg,
 );
 
 /// -----------------------------------------------------------------------------
@@ -14,19 +15,19 @@ $breakpoints: (
 @mixin bp($range, $size-1, $size-2: null) {
 	// Validate `$size-1` existance in `$breakpoints`
 	@if map.has-key($breakpoints, $size-1) {
-		@if ($range) == min-width {
+		@if ($range) ==min-width {
 			$width: map.get($breakpoints, $size-1);
 
 			@media (min-width: $width) {
 				@content;
 			}
-		} @else if ($range) == max-width {
+		} @else if ($range) ==max-width {
 			$width: #{map.get($breakpoints, $size-1)};
 
 			@media (max-width: $width) {
 				@content;
 			}
-		} @else if ($range) == between {
+		} @else if ($range) ==between {
 			// Validate `$size-2` existance in `$breakpoints`
 			@if map.has-key($breakpoints, $size-2) {
 				$width-1: map.get($breakpoints, $size-1);
